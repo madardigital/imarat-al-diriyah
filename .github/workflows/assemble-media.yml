@@ -1,0 +1,40 @@
+name: Assemble presentation videos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "media-parts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-videos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Rebuild original video files
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -d media-parts ]; then
+            echo "No staged media parts found"
+            exit 0
+          fi
+          mkdir -p assets
+          for n in video1 video2 video3; do
+            cat media-parts/${n}.part* | base64 --decode > "assets/${n}.mp4"
+            test -s "assets/${n}.mp4"
+          done
+          rm -rf media-parts
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets media-parts
+          if ! git diff --cached --quiet; then
+            git commit -m "Assemble original presentation videos"
+            git push
+          fi
