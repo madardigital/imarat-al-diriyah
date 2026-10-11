@@ -1,0 +1,35 @@
+name: Assemble approved Diriyah lesson
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site-parts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify and assemble the approved HTML file
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          parts=(site-parts/part*.txt)
+          test "${#parts[@]}" -eq 33
+          cat "${parts[@]}" > index.html
+          echo "4b6010af310f62c40f6cedfaf72cb89c76bb5db52b832d5305c93220f64a0aae  index.html" | sha256sum --check
+          for n in video1 video2 video3; do test -s "assets/${n}.mp4"; done
+          rm -rf site-parts
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- index.html site-parts
+          git commit -m "Publish approved index-16 presentation and connect original lesson videos"
+          git push
