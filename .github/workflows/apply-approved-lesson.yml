@@ -1,0 +1,47 @@
+name: Apply approved Diriyah lesson update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site-updates/approved-20261012.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Apply exact verified patch to presentation HTML
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, base64, hashlib
+          source = Path('index.html')
+          patch = json.loads(Path('site-updates/approved-20261012.json').read_text(encoding='utf-8'))
+          original = source.read_bytes()
+          digest = lambda b: hashlib.sha256(b).hexdigest()
+          if digest(original) == patch['result_sha256']:
+              print('Approved lesson already installed')
+          else:
+              assert digest(original) == patch['base_sha256'], 'Unexpected source version; stop without changing the lesson'
+              updated = original
+              for op in reversed(patch['operations']):
+                  updated = updated[:op['start']] + base64.b64decode(op['new_b64']) + updated[op['end']:]
+              assert digest(updated) == patch['result_sha256'], 'Updated lesson content verification failed'
+              source.write_bytes(updated)
+              print('Applied and verified approved lesson update')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish approved Emirs slide, restored photos and video setup fix"
+            git push
+          fi
