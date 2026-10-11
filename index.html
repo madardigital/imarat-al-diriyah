@@ -33,6 +33,38 @@
 @media(max-width:730px) and (orientation:landscape){.princes-complete .prince-card{font-size:12px;line-height:1.25;padding:2px 3px}.prince-info-card h3{font-size:16px}.prince-info-card p{font-size:15px;line-height:1.5}.info-tab{height:22px;width:22px}.prince-info-controls{gap:4px}.prince-info-controls .secondary{font-size:10px;padding:3px 7px}.choice-button{font-size:13px;padding:4px 6px;min-height:40px}.template-game .game-controls .status{font-size:10.5px;max-width:80%}.template-game .question-inset{font-size:14px;line-height:1.4;padding:4px 6px}.intro-controls .template-button{font-size:11px;padding:4px 8px}.template-game .plane{height:22px;width:52px}.plane-label{font-size:8px;padding:1px 5px}.template-game .game-controls .template-button{font-size:11px;min-height:30px}}
 @media(orientation:portrait) and (max-width:650px){.princes-layout{grid-template-rows:45% minmax(0,1fr)}.princes-complete .prince-card{font-size:11px;line-height:1.45;padding:3px}.prince-info-card{padding:8px 12px}.prince-info-card p{font-size:16px}.prince-info-controls{gap:3px;flex-wrap:wrap}.info-tab{height:23px;width:23px}.info-reset{margin-inline-start:0}.game-intro .intro-controls{flex-wrap:wrap}.intro-controls .template-button{font-size:11px;padding:5px 9px}.game-choices{gap:4px}.choice-button{font-size:12px;padding:5px;min-height:44px}.template-game .game-controls .status{max-width:100%}.template-game .game-controls{flex-wrap:nowrap}.intro-video-panel video{border-radius:10px}}
 
+
+/* الشريحة 13 الوحيدة المأخوذة من index-10.html: الرسم الزمني والبطاقات التفسيرية. */
+.source-emirs .heading{flex:none}
+.source-emirs-content{display:flex;flex-direction:column;min-height:0;gap:8px}
+.source-emirs-diagram{height:42%;min-height:0;flex:none;display:grid;place-items:center}
+.source-emirs-svg{height:100%;width:100%;max-width:1050px;overflow:visible}
+.source-emirs-track path{fill:none;stroke:var(--gold);stroke-width:5;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .9s}
+.source-emirs-track.shown path{stroke-dashoffset:0}
+.source-emirs-date{fill:var(--heritage);font-size:18px;font-weight:700;font-family:Tahoma,Arial,sans-serif}
+.source-emirs-name{cursor:pointer}
+.source-emirs-name line{stroke:var(--heritage);stroke-width:3}
+.source-emirs-name circle{fill:var(--gold);stroke:var(--heritage);stroke-width:3}
+.source-emirs-name rect{fill:var(--heritage);stroke:var(--gold);stroke-width:2.5;transition:fill .2s,filter .2s}
+.source-emirs-name text{fill:#fff;font-size:15px;font-weight:700;font-family:Tahoma,Arial,sans-serif;pointer-events:none}
+.source-emirs-name.selected rect,.source-emirs-name:hover rect{fill:#358663;filter:drop-shadow(0 0 5px #cba566)}
+.source-emirs-details{flex:1;min-height:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:8px;overflow-y:auto;align-content:stretch;padding:2px 3px 6px}
+.source-emirs-card{display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:0;min-height:0;overflow-y:auto;background:var(--heritage);border:2px solid var(--gold);border-radius:11px;padding:7px 9px;box-shadow:0 4px 10px #0b2a2250;font-size:clamp(11px,1.2vw,15px);line-height:1.45;text-align:center;scrollbar-width:thin;color:#fff !important;cursor:pointer}
+.source-emirs-card b,.source-emirs-card span{color:#fff !important;flex:none;overflow-wrap:anywhere}
+.source-emirs-card.selected{background:#14513c;outline:2px solid #e8c48a;outline-offset:-2px}
+@media(max-height:500px){.source-emirs-content{gap:4px}.source-emirs-diagram{height:42%}.source-emirs-details{gap:5px;padding-bottom:2px}.source-emirs-card{font-size:clamp(10px,1.5vh,12px);line-height:1.35;padding:3px 5px;border-radius:8px;gap:2px}.source-emirs .heading h2{font-size:clamp(22px,3.3vw,31px)}}
+@media(max-width:700px) and (orientation:portrait){.source-emirs-diagram{height:37%}.source-emirs-details{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr))}.source-emirs-card{font-size:11px}}
+
+
+/* صور المصدر التي وافق عليها صاحب العرض، ضمن شريحة أعمال مانع المريدي فقط. */
+.muraydi-section .muraydi-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(115px,22%);align-items:stretch;gap:clamp(7px,1.5vw,18px);min-height:0}
+.muraydi-section .flow{height:100%;max-width:none;width:100%;min-height:0}
+.muraydi-photos{display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1.2fr);gap:7px;min-height:0}
+.muraydi-photo{margin:0;min-width:0;min-height:0;overflow:hidden;border-radius:12px;border:1px solid var(--gold);background:#f0e6d4;box-shadow:0 3px 9px #0c2b251f;display:block}
+.muraydi-photo img{display:block;width:100%;height:100%;object-fit:contain}
+.muraydi-photo:nth-child(2) img{object-fit:cover}
+@media (max-height:500px){.muraydi-photos{gap:5px}.muraydi-photo{border-radius:8px}}
+@media (orientation:portrait) and (max-width:650px){.muraydi-section .muraydi-content{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) 85px}.muraydi-photos{display:flex;gap:6px}.muraydi-photo{flex:1;min-width:0}}
 </style>
 </head>
 <body>
@@ -65,7 +97,7 @@
 <section class="slide dark" data-name="إضاءة" data-steps="2" hidden><div class="heading"><h2>اضاءة</h2></div><div class="content"><div class="light-layout"><svg class="lantern" aria-hidden="true"><use href="#lantern"/></svg><div class="light-message"><p class="lead reveal" data-step="1">عزيزي المتخرج عندما أسس النبي محمد صلى الله عليه وسلم الدولة الإسلامية كان اول الاعمال التي قام بها هو تأسيس .......................</p><button class="secondary reveal" data-step="1" data-set-step="2">اكشف</button><p class="answer reveal" data-step="2">عاصمة الدولة الإسلامية</p></div></div></div></section>
 <section class="slide" data-name="الفيديو الأول" data-steps="1" hidden><div class="content reveal" data-step="1"><div class="video-layout"><p class="lead">استمع عزيزي الطالب بمشاهدة الفيديو التالي ودون ملاحظاتك وافكارك ومفاهيمك الجديدة لنقوم بمناقشتها سويا ونتبادل المعلومات المفيدة</p><div class="video-frame" data-video="video1"></div></div></div></section>
 <section class="slide" data-name="تفكير" data-steps="2" hidden><div class="heading"><h2>تفكير</h2></div><p class="lead">عزيزي الطالب ضمن المجموعة اجب عن السؤال التالي :</p><div class="content"><div class="thinking"><p class="question reveal" data-step="1">لماذا انتقل مانع المريدي الى نجد عام 850هـ؟</p><button class="primary reveal" data-step="1" data-set-step="2">اكشف المعلومات</button><p class="card history scroll reveal" data-step="2">من بني حنيفة الذين استوطنوه، ونتيجة للأحوال الطبيعية القاسية من جفاف وغيره، وتسلط الجبريين عليهم في منطقتهم، وامتداداً لجذورهم في الحكم في وسط شبه الجزيرة العربية، وتواصلهم مع أبناء عمومتهم في اليمامة؛ قرر مانع المريدي جد الأسرة المالكة آل سعود في منتصف القرن التاسع الهجري في عام 850هـ الانتقال بأسرته من شرق شبه الجزيرة العربية إلى العارض في نجد بدعوة من ابن عمه ابن درع صاحب حجر والجزعة.</p></div></div></section>
-<section class="slide" data-name="أعمال مانع المريدي" data-steps="5" hidden><p class="lead">عزيزي الطالب تتبع من خلال الصور الاعمال التي قام بها مانع المريدي</p><div class="content"><div class="flow"><svg class="arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="arrow" data-step="2" d="M50 12V21H20V37m-2-3 2 3 2-3"/><path class="arrow" data-step="3" d="M50 12V21H80V37m-2-3 2 3 2-3"/><path class="arrow" data-step="4" d="M20 50V57H50V67M80 50V57H50m-2 7 2 3 2-3"/><path class="arrow" data-step="5" d="M50 76V90m-2-3 2 3 2-3"/></svg><button class="flow-node reveal" data-step="1" data-reveal><svg aria-hidden="true"><use href="#person"/></svg><span>مانع المريدي</span></button><button class="flow-node reveal" data-step="2" data-reveal>غصيبة</button><button class="flow-node reveal" data-step="3" data-reveal>الميلبيد</button><button class="flow-node reveal" data-step="4" data-reveal>بلدة الدرعية</button><button class="flow-node reveal" data-step="5" data-reveal>امارة ذات نفوذ</button></div></div></section>
+<section class="slide muraydi-section" data-name="أعمال مانع المريدي" data-steps="5" hidden><p class="lead">عزيزي الطالب تتبع من خلال الصور الاعمال التي قام بها مانع المريدي</p><div class="content muraydi-content"><div class="flow"><svg class="arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="arrow" data-step="2" d="M50 12V21H20V37m-2-3 2 3 2-3"/><path class="arrow" data-step="3" d="M50 12V21H80V37m-2-3 2 3 2-3"/><path class="arrow" data-step="4" d="M20 50V57H50V67M80 50V57H50m-2 7 2 3 2-3"/><path class="arrow" data-step="5" d="M50 76V90m-2-3 2 3 2-3"/></svg><button class="flow-node reveal" data-step="1" data-reveal><svg aria-hidden="true"><use href="#person"/></svg><span>مانع المريدي</span></button><button class="flow-node reveal" data-step="2" data-reveal>غصيبة</button><button class="flow-node reveal" data-step="3" data-reveal>الميلبيد</button><button class="flow-node reveal" data-step="4" data-reveal>بلدة الدرعية</button><button class="flow-node reveal" data-step="5" data-reveal>امارة ذات نفوذ</button></div><aside class="muraydi-photos" aria-label="صور توضيحية من العرض الأصلي"><figure class="muraydi-photo reveal" data-step="1"><img src="assets/amira_image21.webp" alt="رسم توضيحي لشخصية تاريخية" loading="lazy" decoding="async"></figure><figure class="muraydi-photo reveal" data-step="2"><img src="assets/amira_image24.webp" alt="صورة لعمارة تراثية طينية" loading="lazy" decoding="async"></figure></aside></div></section>
 <section class="slide" data-name="مدينة الدرعية" data-steps="8" hidden><svg class="decor" aria-hidden="true"><use href="#town"/></svg><div class="heading"><h2>مدينة الدرعية</h2><span class="subtitle">تأسست عام 850 هجرية 1446م</span></div><div class="content scroll"><div class="city-grid">
 <button class="card city-card reveal closed" data-step="1" data-reveal aria-label="كشف تأسست"><svg class="mini-icon" aria-hidden="true"><use href="#smalltown"/></svg><b>تأسست</b><span>على يد الأمير مانع بن ربيعة المريدي الجد الثاني عشر للملك عبدالعزيز.</span></button>
 <button class="card city-card reveal closed" data-step="2" data-reveal aria-label="كشف تكونت"><svg class="mini-icon" aria-hidden="true"><use href="#smalltown"/></svg><b>تكونت</b><span>في الأساس من غصيبة والمليبيد.</span></button>
@@ -78,7 +110,58 @@
 </div></div></section>
 <section class="slide dark" data-name="الفيديو الثاني" data-steps="1" hidden><svg class="decor" aria-hidden="true"><use href="#town"/></svg><div class="content reveal" data-step="1"><div class="video-layout"><div class="video-frame" data-video="video2"></div></div></div></section>
 <section class="slide" data-name="التسلسل التاريخي لحكام الدرعية" data-steps="1" hidden><div class="content reveal" data-step="1"><div class="video-layout"><p class="lead">يوضح الفيديو التالي التسلسل التاريخ لحكام الدرعية بدا من مانع المريدي</p><div class="video-frame" data-video="video3"></div></div></div></section>
-<section class="slide princes-complete" data-name="مخطط أمراء إمارة الدرعية" data-steps="20" hidden><div class="heading"><h2>أبرز أمراء إمارة الدرعية 850هـ – 1139هـ</h2></div><div class="content"><div class="princes-layout"><div class="prince-map" id="timelineGrid"><svg class="prince-connections" viewBox="0 0 1000 260" preserveAspectRatio="none" aria-hidden="true"><path class="prince-axis" data-step="1" d="M965 130H35"/><g class="prince-link" data-step="3"><path d="M900 130V104"/><circle cx="900" cy="130" r="6"/></g><g class="prince-link" data-step="4"><path d="M800 130V161"/><circle cx="800" cy="130" r="6"/></g><g class="prince-link" data-step="5"><path d="M700 130V104"/><circle cx="700" cy="130" r="6"/></g><g class="prince-link" data-step="6"><path d="M600 130V161"/><circle cx="600" cy="130" r="6"/></g><g class="prince-link" data-step="7"><path d="M500 130V104"/><circle cx="500" cy="130" r="6"/></g><g class="prince-link" data-step="8"><path d="M400 130V161"/><circle cx="400" cy="130" r="6"/></g><g class="prince-link" data-step="9"><path d="M300 130V104"/><circle cx="300" cy="130" r="6"/></g><g class="prince-link" data-step="10"><path d="M200 130V161"/><circle cx="200" cy="130" r="6"/></g><g class="prince-link" data-step="11"><path d="M100 130V104"/><circle cx="100" cy="130" r="6"/></g></svg><span class="timeline-end first reveal" data-step="2">850هـ</span><span class="timeline-end last reveal" data-step="12">1139هـ</span><button class="prince-card reveal" data-step="3" data-prince="0" aria-pressed="false" style="--position:90%;--row:0%">مانع المريدي</button><button class="prince-card reveal" data-step="4" data-prince="1" aria-pressed="false" style="--position:80%;--row:62%">ربيعة بن مانع</button><button class="prince-card reveal" data-step="5" data-prince="2" aria-pressed="false" style="--position:70%;--row:0%">موسى بن ربيعة</button><button class="prince-card reveal" data-step="6" data-prince="3" aria-pressed="false" style="--position:60%;--row:62%">إبراهيم بن موسى</button><button class="prince-card reveal" data-step="7" data-prince="4" aria-pressed="false" style="--position:50%;--row:0%">مرخان بن إبراهيم</button><button class="prince-card reveal" data-step="8" data-prince="5" aria-pressed="false" style="--position:40%;--row:62%">مقرن بن مرخان</button><button class="prince-card reveal" data-step="9" data-prince="6" aria-pressed="false" style="--position:30%;--row:0%">محمد بن مقرن</button><button class="prince-card reveal" data-step="10" data-prince="7" aria-pressed="false" style="--position:20%;--row:62%">سعود بن محمد</button><button class="prince-card reveal" data-step="11" data-prince="8" aria-pressed="false" style="--position:10%;--row:0%">الإمام محمد بن سعود</button></div><div class="prince-info-area"><div class="prince-info-deck" id="princeInfoDeck" aria-live="polite"><article class="prince-info-card reveal scroll" data-step="13" data-info="0" data-for-prince="0" hidden><h3>مانع المريدي</h3><p>أنشأ الدرعية عام 850هـ وأسس إمارة فيها</p></article><article class="prince-info-card reveal scroll" data-step="14" data-info="1" data-for-prince="1" hidden><h3>ربيعة بن مانع</h3><p>واصل إكمال تأسيس إمارة الدرعية</p></article><article class="prince-info-card reveal scroll" data-step="15" data-info="2" data-for-prince="2" hidden><h3>موسى بن ربيعة</h3><p>زاد من نفوذ الإمارة</p></article><article class="prince-info-card reveal scroll" data-step="16" data-info="3" data-for-prince="3" hidden><h3>إبراهيم بن موسى</h3><p>أمّن طرق الحج والتجارة التي تمر بالدرعية</p></article><article class="prince-info-card reveal scroll" data-step="17" data-info="4" data-for-prince="4" hidden><h3>مرخان بن إبراهيم</h3><p>زاد من نفوذ إمارة الدرعية</p></article><article class="prince-info-card reveal scroll" data-step="18" data-info="5" data-for-prince="5" hidden><h3>مقرن بن مرخان</h3><p>توسعت إمارة الدرعية في عهده وعُرفت بالشجاعة</p></article><article class="prince-info-card reveal scroll" data-step="19" data-info="6" data-for-prince="7" hidden><h3>سعود بن محمد</h3><p>زادت قوة إمارة الدرعية في عهده وأصبحت (خيّال ابن مقرن) هي نخوة أهالي الدرعية مع النخوة الأساس (أهل العوجا)</p></article><article class="prince-info-card reveal scroll" data-step="20" data-info="7" data-for-prince="8" hidden><h3>محمد بن سعود</h3><p>مؤسس الدولة السعودية الأولى</p></article></div><div class="prince-info-controls"><button class="secondary info-arrow" id="infoPrev" aria-label="البطاقة السابقة" disabled>السابق</button><div class="info-tabs" role="group" aria-label="البطاقات التفسيرية"><button class="info-tab" data-info-tab="0" aria-label="بطاقة مانع المريدي" aria-pressed="false" disabled>١</button><button class="info-tab" data-info-tab="1" aria-label="بطاقة ربيعة بن مانع" aria-pressed="false" disabled>٢</button><button class="info-tab" data-info-tab="2" aria-label="بطاقة موسى بن ربيعة" aria-pressed="false" disabled>٣</button><button class="info-tab" data-info-tab="3" aria-label="بطاقة إبراهيم بن موسى" aria-pressed="false" disabled>٤</button><button class="info-tab" data-info-tab="4" aria-label="بطاقة مرخان بن إبراهيم" aria-pressed="false" disabled>٥</button><button class="info-tab" data-info-tab="5" aria-label="بطاقة مقرن بن مرخان" aria-pressed="false" disabled>٦</button><button class="info-tab" data-info-tab="6" aria-label="بطاقة سعود بن محمد" aria-pressed="false" disabled>٧</button><button class="info-tab" data-info-tab="7" aria-label="بطاقة محمد بن سعود" aria-pressed="false" disabled>٨</button></div><button class="secondary info-arrow" id="infoNext" aria-label="البطاقة التالية" disabled>التالي</button><button class="secondary info-reset" id="resetTimeline">إعادة الكشف</button></div></div></div></div></section>
+<section class="slide source-emirs" data-name="أمراء الدرعية" data-steps="19" hidden>
+ <div class="heading"><h2>أبرز أمراء إمارة الدرعية 850هـ – 1139هـ</h2></div>
+ <div class="content source-emirs-content">
+  <div class="source-emirs-diagram"><svg class="source-emirs-svg" viewBox="0 0 920 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="التسلسل التاريخي لأمراء الدرعية من عام 850هـ إلى 1139هـ"><g class="source-emirs-track reveal" data-step="1"><path d="M905 80H20" pathLength="1" /></g><text class="source-emirs-date reveal" data-step="1" x="868" y="106" text-anchor="middle">850هـ</text><text class="source-emirs-date reveal" data-step="11" x="48" y="106" text-anchor="middle">1139هـ</text><g class="source-emirs-name reveal" data-step="2" data-emir="0" role="button" tabindex="0" aria-label="مانع المريدي" aria-pressed="false">
+      <line x1="830.0" y1="42" x2="830.0" y2="80"/>
+      <circle cx="830.0" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="742.0" y="6" width="176" height="36" rx="10"/>
+      <text x="830.0" y="29" text-anchor="middle">مانع المريدي</text>
+    </g><g class="source-emirs-name reveal" data-step="3" data-emir="1" role="button" tabindex="0" aria-label="ربيعة بن مانع" aria-pressed="false">
+      <line x1="737.5" y1="80" x2="737.5" y2="118"/>
+      <circle cx="737.5" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="649.5" y="118" width="176" height="36" rx="10"/>
+      <text x="737.5" y="141" text-anchor="middle">ربيعة بن مانع</text>
+    </g><g class="source-emirs-name reveal" data-step="4" data-emir="2" role="button" tabindex="0" aria-label="موسى بن ربيعة" aria-pressed="false">
+      <line x1="645.0" y1="42" x2="645.0" y2="80"/>
+      <circle cx="645.0" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="557.0" y="6" width="176" height="36" rx="10"/>
+      <text x="645.0" y="29" text-anchor="middle">موسى بن ربيعة</text>
+    </g><g class="source-emirs-name reveal" data-step="5" data-emir="3" role="button" tabindex="0" aria-label="إبراهيم بن موسى" aria-pressed="false">
+      <line x1="552.5" y1="80" x2="552.5" y2="118"/>
+      <circle cx="552.5" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="464.5" y="118" width="176" height="36" rx="10"/>
+      <text x="552.5" y="141" text-anchor="middle">إبراهيم بن موسى</text>
+    </g><g class="source-emirs-name reveal" data-step="6" data-emir="4" role="button" tabindex="0" aria-label="مرخان بن إبراهيم" aria-pressed="false">
+      <line x1="460.0" y1="42" x2="460.0" y2="80"/>
+      <circle cx="460.0" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="372.0" y="6" width="176" height="36" rx="10"/>
+      <text x="460.0" y="29" text-anchor="middle">مرخان بن إبراهيم</text>
+    </g><g class="source-emirs-name reveal" data-step="7" data-emir="5" role="button" tabindex="0" aria-label="مقرن بن مرخان" aria-pressed="false">
+      <line x1="367.5" y1="80" x2="367.5" y2="118"/>
+      <circle cx="367.5" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="279.5" y="118" width="176" height="36" rx="10"/>
+      <text x="367.5" y="141" text-anchor="middle">مقرن بن مرخان</text>
+    </g><g class="source-emirs-name reveal" data-step="8" data-emir="6" role="button" tabindex="0" aria-label="محمد بن مقرن" aria-pressed="false">
+      <line x1="275.0" y1="42" x2="275.0" y2="80"/>
+      <circle cx="275.0" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="187.0" y="6" width="176" height="36" rx="10"/>
+      <text x="275.0" y="29" text-anchor="middle">محمد بن مقرن</text>
+    </g><g class="source-emirs-name reveal" data-step="9" data-emir="7" role="button" tabindex="0" aria-label="سعود بن محمد" aria-pressed="false">
+      <line x1="182.5" y1="80" x2="182.5" y2="118"/>
+      <circle cx="182.5" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="94.5" y="118" width="176" height="36" rx="10"/>
+      <text x="182.5" y="141" text-anchor="middle">سعود بن محمد</text>
+    </g><g class="source-emirs-name reveal" data-step="10" data-emir="8" role="button" tabindex="0" aria-label="الإمام محمد بن سعود" aria-pressed="false">
+      <line x1="90.0" y1="42" x2="90.0" y2="80"/>
+      <circle cx="90.0" cy="80" r="8"/>
+      <rect class="source-emirs-label" x="2.0" y="6" width="176" height="36" rx="10"/>
+      <text x="90.0" y="29" text-anchor="middle">الإمام محمد بن سعود</text>
+    </g></svg></div>
+  <div class="source-emirs-details scroll"><div class="source-emirs-card reveal" data-step="12" data-emir-card="0" tabindex="0"><b>مانع المريدي</b><span>أنشأ الدرعية عام 850هـ وأسس إمارة فيها</span></div><div class="source-emirs-card reveal" data-step="13" data-emir-card="1" tabindex="0"><b>ربيعة بن مانع</b><span>واصل إكمال تأسيس إمارة الدرعية</span></div><div class="source-emirs-card reveal" data-step="14" data-emir-card="2" tabindex="0"><b>موسى بن ربيعة</b><span>زاد من نفوذ الإمارة</span></div><div class="source-emirs-card reveal" data-step="15" data-emir-card="3" tabindex="0"><b>إبراهيم بن موسى</b><span>أمّن طرق الحج والتجارة التي تمر بالدرعية</span></div><div class="source-emirs-card reveal" data-step="16" data-emir-card="4" tabindex="0"><b>مرخان بن إبراهيم</b><span>زاد من نفوذ إمارة الدرعية</span></div><div class="source-emirs-card reveal" data-step="17" data-emir-card="5" tabindex="0"><b>مقرن بن مرخان</b><span>توسعت إمارة الدرعية في عهده وعُرفت بالشجاعة</span></div><div class="source-emirs-card reveal" data-step="18" data-emir-card="6" tabindex="0"><b>سعود بن محمد</b><span>زادت قوة إمارة الدرعية في عهده وأصبحت (خيّال ابن مقرن) هي نخوة أهالي الدرعية مع النخوة الأساس (أهل العوجا)</span></div><div class="source-emirs-card reveal" data-step="19" data-emir-card="7" tabindex="0"><b>محمد بن سعود</b><span>مؤسس الدولة السعودية الأولى</span></div></div>
+ </div>
+</section>
 <section class="slide game template-game" data-name="درع الوطن" data-steps="2" hidden><div class="heading"><h2>درع الوطن</h2><span class="subtitle">مهمة الاعتراض الذكي</span></div><div class="content">
 <div class="game-intro" id="gameIntro"><div class="game-start" id="gameStart"><img class="formation-art" data-asset="formation" alt="" aria-hidden="true"><div class="intro"><p id="introText" hidden>أبنائي وبناتي…أنتم اليوم في مهمة وطنية خاصة…تم رصد تحركات في سماء المدينة…ونحتاج إلى ذكائكم للتصدي لها
 
@@ -136,12 +219,40 @@ $$('.sector').forEach(el=>{function choose(){const n=Number(el.dataset.question)
 $$('[data-direction]').forEach((b,i)=>b.addEventListener('click',()=>{state.selectedDirection=i;$$('[data-direction]').forEach((x,k)=>{x.classList.toggle('selected',k===i);x.setAttribute('aria-pressed',String(k===i))});sound('activity')}));
 function openEditor(b){editing=b;$('#editText').value=b.textContent;$('#editorTitle').textContent=b.dataset.cell?b.getAttribute('aria-label'):'الكتابة في الخانة';$('#editor').showModal();$('#editText').focus();sound('activity')}
 $$('#learning [data-cell]').forEach(b=>b.addEventListener('click',()=>openEditor(b)));
-const princeMapping=[0,1,2,3,4,5,-1,6,7];
-function renderPrinces(){const n=state.steps[12],count=Math.max(0,Math.min(8,n-12));if(state.princeStage!==n){state.princeCard=Math.max(0,count-1);state.princeStage=n}state.princeCard=Math.max(0,Math.min(Math.max(0,count-1),state.princeCard));const selected=$$('[data-info]')[state.princeCard];$$('[data-info]').forEach((b,i)=>{b.hidden=count===0||i!==state.princeCard;b.classList.toggle('selected',i===state.princeCard)});$$('[data-info-tab]').forEach((b,i)=>{b.disabled=i>=count;b.classList.toggle('selected',count>0&&i===state.princeCard);b.setAttribute('aria-pressed',String(count>0&&i===state.princeCard))});$('#infoPrev').disabled=count===0||state.princeCard===0;$('#infoNext').disabled=count===0||state.princeCard>=count-1;if(count>0&&selected){const associated=Number(selected.dataset.forPrince);state.selectedPrince=associated;$$('[data-prince]').forEach((b,i)=>{b.classList.toggle('selected',i===associated);b.setAttribute('aria-pressed',String(i===associated))})}}
-function selectInfo(i){const count=Math.max(0,Math.min(8,state.steps[12]-12));if(i<0||i>=count)return;state.princeCard=i;renderPrinces();const card=$$('[data-info]')[i];card.scrollTop=0;sound('activity')}
-$$('[data-prince]').forEach((b,i)=>b.addEventListener('click',()=>{const info=princeMapping[i],count=Math.max(0,state.steps[12]-12);if(info>=0&&info<count){selectInfo(info)}else{state.selectedPrince=i;$$('[data-prince]').forEach((x,k)=>{x.classList.toggle('selected',k===i);x.setAttribute('aria-pressed',String(k===i))});sound('activity')}}));
-$$('[data-info-tab]').forEach((b,i)=>b.addEventListener('click',()=>selectInfo(i)));$('#infoPrev').addEventListener('click',()=>selectInfo(state.princeCard-1));$('#infoNext').addEventListener('click',()=>selectInfo(state.princeCard+1));
-$('#editor').addEventListener('close',()=>{if($('#editor').returnValue==='save'&&editing)editing.textContent=$('#editText').value;if(editing)editing.focus();editing=null});$('#clearCell').addEventListener('click',()=>{$('#editText').value='';$('#editText').focus()});$('#resetTimeline').addEventListener('click',()=>{state.steps[12]=0;state.selectedPrince=null;state.princeStage=-1;state.princeCard=0;$$('[data-prince]').forEach(b=>{b.classList.remove('selected');b.setAttribute('aria-pressed','false')});update();sound('activity')});
+// شاشة الأمراء: التسلسل والنصوص من الشريحة 13 لملف index-10.html فقط.
+const emirCardMapping=[0,1,2,3,4,5,-1,6,7];
+function renderPrinces(){
+ const n=state.steps[12],available=Math.max(0,Math.min(8,n-11));
+ if(state.princeStage!==n){
+   state.princeStage=n;
+   if(n>=12)state.princeCard=Math.min(available-1,7);
+ }
+ $$('.source-emirs-card').forEach((c,i)=>c.classList.toggle('selected',i===state.princeCard&&i<available));
+ $$('.source-emirs-name').forEach((el,i)=>{
+   const k=emirCardMapping[i];
+   const selected=k>=0&&k===state.princeCard&&k<available;
+   el.classList.toggle('selected',selected);
+   el.setAttribute('aria-pressed',String(selected));
+   el.setAttribute('tabindex',Number(el.dataset.step)<=n?'0':'-1');
+ });
+}
+function selectInfo(i){
+ const available=Math.max(0,Math.min(8,state.steps[12]-11));
+ if(i<0||i>=available)return;
+ state.princeCard=i;
+ renderPrinces();
+ const card=$(`[data-emir-card="${i}"]`);
+ if(card)card.scrollIntoView({block:'nearest',behavior:'smooth'});
+ sound('activity');
+}
+$$('.source-emirs-name').forEach(el=>{
+ const choose=()=>{const i=Number(el.dataset.emir);const k=emirCardMapping[i];
+   if(k>=0)selectInfo(k);else sound('activity')};
+ el.addEventListener('click',choose);
+ el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose()}});
+});
+$$('.source-emirs-card').forEach(c=>c.addEventListener('click',()=>selectInfo(Number(c.dataset.emirCard))));
+$('#editor').addEventListener('close',()=>{if($('#editor').returnValue==='save'&&editing)editing.textContent=$('#editText').value;if(editing)editing.focus();editing=null});$('#clearCell').addEventListener('click',()=>{$('#editText').value='';$('#editText').focus()});$('#resetTimeline')?.addEventListener('click',()=>{state.steps[12]=0;state.selectedPrince=null;state.princeStage=-1;state.princeCard=0;$$('[data-prince]').forEach(b=>{b.classList.remove('selected');b.setAttribute('aria-pressed','false')});update();sound('activity')});
 function videoSetup(){$$('[data-video]').forEach(frame=>{const key=frame.dataset.video;const art=document.createElementNS('http://www.w3.org/2000/svg','svg');art.classList.add('video-scene');art.setAttribute('aria-hidden','true');const use=document.createElementNS('http://www.w3.org/2000/svg','use');use.setAttribute('href','#town');art.appendChild(use);frame.appendChild(art);const video=document.createElement('video');video.controls=true;video.playsInline=true;video.setAttribute('playsinline','');video.preload='metadata';video.setAttribute('aria-label','مشغل الفيديو '+arabic(Number(key.slice(-1))));if(VIDEO_URLS[key]){video.src=VIDEO_URLS[key];frame.appendChild(video);art.hidden=true}else{video.hidden=true;frame.appendChild(video);const placeholder=document.createElement('div');placeholder.className='video-placeholder';placeholder.innerHTML='<span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 3 16 9-16 9Z"/></svg></span><span>سيُضاف الفيديو هنا لاحقًا</span>';frame.appendChild(placeholder)}})}videoSetup();
 slides.forEach((s,i)=>{const b=document.createElement('button');b.innerHTML='<span>'+arabic(i+1)+'</span><span></span>';b.lastElementChild.textContent=s.dataset.name;b.addEventListener('click',()=>{closeMenu();go(i)});$('#stationList').appendChild(b)});
 function closeMenu(){$('#stationMenu').hidden=true;$('#menuOverlay').hidden=true;$('#menuButton').setAttribute('aria-expanded','false');if(menuReturn)menuReturn.focus()}
