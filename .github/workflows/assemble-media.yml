@@ -27,7 +27,11 @@ jobs:
           fi
           mkdir -p assets
           for n in video1 video2 video3; do
-            cat media-parts/${n}.part* | base64 --decode > "assets/${n}.mp4"
+            out="assets/${n}.mp4"
+            : > "$out"
+            for part in media-parts/${n}.part*; do
+              base64 --decode "$part" >> "$out"
+            done
             test -s "assets/${n}.mp4"
           done
           rm -rf media-parts
