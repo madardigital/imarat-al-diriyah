@@ -129,6 +129,79 @@
  .muraydi-restored .muraydi-cards .timeline{padding:3px;min-height:0}
 }
 @media(orientation:portrait) and (max-width:690px){.source-rulers-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}.muraydi-restored .muraydi-cards{grid-template-columns:1fr;overflow:auto}.muraydi-restored .muraydi-cards>.box{min-height:200px}}
+
+/* Reconstructed from the complete original round-table strategy worksheet. */
+.roundtable-slide{justify-content:flex-start!important;gap:clamp(7px,1.1vw,14px);overflow-y:auto}
+.roundtable-header{display:flex;align-items:center;gap:18px;justify-content:space-between;flex-wrap:wrap}
+.roundtable-header h1{font-size:clamp(22px,2.4vw,35px);line-height:1.2}
+.roundtable-header p{font-size:clamp(13px,1.15vw,18px)}
+.roundtable-task{padding:clamp(9px,1.4vw,18px);background:linear-gradient(120deg,#ebf2e9,#fdf6e7);border:1px solid #b5d0bb;border-radius:16px}
+.roundtable-task h2{font-size:clamp(18px,2vw,28px);margin:0 0 1px}
+.roundtable-subtitle{font-weight:850;font-size:clamp(11px,1vw,15px);color:#456e55}
+.roundtable-instruction{font-weight:650;font-size:clamp(12px,1.07vw,17px)!important;line-height:1.5!important;margin:5px 0 7px!important}
+.roundtable-question{font-size:clamp(15px,1.7vw,24px);font-weight:900;border-right:4px solid #bb9462;padding:5px 11px;background:#fffaf0;border-radius:9px}
+.roundtable-workspace{display:grid;grid-template-columns:minmax(0,4fr) minmax(110px,1.15fr);align-items:center;gap:clamp(7px,2vw,22px);min-height:0}
+.roundtable-ideas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.roundtable-learner{background:#fffdf7;border:1px solid #d6ccac;padding:clamp(6px,.8vw,11px);border-radius:11px;display:grid;gap:5px;min-width:0}
+.roundtable-learner>label:first-child{display:flex;align-items:center;gap:7px;font-size:clamp(11px,.98vw,15px);font-weight:800;white-space:nowrap}
+.roundtable-learner input{min-width:0;width:100%;flex:1;border:1px solid #cdd4ca;border-radius:7px;padding:5px;background:#eef4ea;color:#153c33}
+.roundtable-idea{display:grid;gap:3px;font-size:clamp(11px,.9vw,14px);font-weight:800;color:#376551}
+.roundtable-idea textarea{width:100%;min-width:0;min-height:34px;resize:vertical;border:1px solid #bdcfbf;border-radius:7px;padding:5px 7px;background:#fafef7;color:#173d32;font:inherit}
+.roundtable-center{position:relative;display:grid;place-items:center;height:100%;min-height:115px}
+.roundtable-center .roundtable-disc{width:clamp(84px,11vw,160px);height:clamp(64px,8vw,114px);border-radius:50%;transform:perspective(200px) rotateX(28deg);border:10px solid #d9ae78;background:radial-gradient(ellipse at 35% 30%,#fff1d1,#ba754f);box-shadow:0 7px 18px #6f4f3f3d}
+.roundtable-center .roundtable-disc-inner{width:100%;height:100%;border:2px solid #fff8dc88;border-radius:50%}
+.roundtable-center .roundtable-stand{width:8px;height:30px;background:#9a634a;position:absolute;top:65%;z-index:-1;border-radius:2px}
+.roundtable-agreement{display:grid;gap:6px;background:#e2eedf;border:1px solid #b0c9a8;padding:clamp(7px,1vw,12px);border-radius:12px;font-size:clamp(12px,1.1vw,16px)}
+.roundtable-agreement textarea{width:100%;min-height:39px;resize:vertical;border:1px solid #9fbd9d;border-radius:7px;padding:6px 9px;font:inherit;background:#fffefa}
+.roundtable-slide .lesson-original-answer{margin-top:3px;flex-shrink:0;font-size:clamp(11px,1vw,15px)}
+.roundtable-slide .lesson-original-answer p{max-height:180px;overflow-y:auto}
+.vision-slide{justify-content:flex-start!important;overflow-y:auto}
+.vision-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(145px,.85fr);gap:clamp(12px,3vw,34px);align-items:start;min-height:0}
+.vision-copy{min-width:0;display:grid;gap:12px}
+.vision-copy h1{font-size:clamp(28px,3.7vw,52px)}
+.vision-full-text{white-space:pre-line;font-size:clamp(15px,1.43vw,22px)!important;line-height:1.78!important;overflow-wrap:anywhere}
+.vision-image{min-width:0;min-height:0;align-self:center}
+.vision-image .photo{max-height:45vh}
+@media(max-width:700px) and (orientation:portrait){.roundtable-workspace{grid-template-columns:1fr}.roundtable-center{min-height:85px}.vision-layout{grid-template-columns:1fr}.vision-image{display:none}}
+@media(max-height:550px) and (orientation:landscape){
+.roundtable-slide{gap:5px!important;padding:5px 15px!important;justify-content:flex-start!important}
+.roundtable-header{gap:6px}.roundtable-header h1{font-size:19px}.roundtable-header p{font-size:11px}
+.roundtable-task{padding:5px 9px;border-radius:9px}.roundtable-task h2{font-size:15px}.roundtable-subtitle{font-size:10px}
+.roundtable-instruction{font-size:11px!important;line-height:1.2!important;margin:1px 0!important}
+.roundtable-question{font-size:13px;padding:3px 8px}
+.roundtable-workspace{grid-template-columns:minmax(0,5fr) minmax(70px,1fr);gap:7px}
+.roundtable-ideas{gap:4px}.roundtable-learner{padding:4px;border-radius:6px;gap:3px}
+.roundtable-learner>label:first-child{font-size:10px}.roundtable-learner input{padding:3px}
+.roundtable-idea{font-size:10px;gap:2px}.roundtable-idea textarea{min-height:28px;max-height:42px;padding:3px 5px}
+.roundtable-center{min-height:70px}.roundtable-center .roundtable-disc{width:72px;height:53px;border-width:5px}
+.roundtable-center .roundtable-stand{height:20px}.roundtable-agreement{padding:5px;font-size:11px;gap:3px}.roundtable-agreement textarea{min-height:30px;padding:4px}
+.vision-slide{padding:11px 22px!important}.vision-layout{grid-template-columns:minmax(0,2.2fr) minmax(105px,.7fr);gap:12px}
+.vision-copy{gap:5px}.vision-copy h1{font-size:24px}.vision-full-text{font-size:clamp(15px,1.7vw,20px)!important;line-height:1.57!important}
+.vision-image .photo{max-height:36vh}
+}
+
+@media(max-height:550px) and (orientation:landscape){
+  .roundtable-workspace{display:block}
+  .roundtable-ideas{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+  .roundtable-center{display:none}
+  .roundtable-learner>label:first-child{flex-direction:column;align-items:stretch;gap:2px}
+  .roundtable-learner input{height:24px}
+  .roundtable-idea textarea{height:33px;min-height:33px;resize:none}
+  .roundtable-slide .lesson-original-answer{font-size:11px}
+}
+@media(max-width:700px) and (orientation:portrait){.roundtable-ideas{grid-template-columns:1fr}}
+@media(max-height:550px) and (orientation:landscape){
+  .roundtable-header .kicker{display:none}
+  .roundtable-header{min-height:25px}
+  .roundtable-task{display:grid;grid-template-columns:1fr auto;gap:3px 10px;align-items:center}
+  .roundtable-task h2{grid-column:1;grid-row:1}
+  .roundtable-subtitle{grid-column:2;grid-row:1}
+  .roundtable-instruction{grid-column:1/-1;grid-row:2}
+  .roundtable-question{grid-column:1/-1;grid-row:3}
+  .roundtable-learner input{height:21px}
+  .roundtable-idea textarea{min-height:26px;height:26px}
+  .roundtable-agreement textarea{min-height:27px;height:27px}
+}
 </style></head><body><div id="app"><header class="head" id="head"><div><strong>إمارة الدرعية</strong><div class="sub">العرض التفاعلي</div></div><div class="headend"><button class="small-btn" id="sound" aria-label="الصوت" title="الصوت">♫</button><button class="small-btn" id="full" aria-label="ملء الشاشة" title="ملء الشاشة">⛶</button></div></header><main class="stagewrap"><section class="stage" id="stage" aria-live="polite"></section></main><footer class="footer"><div><button class="nav" id="prev">→ السابق</button></div><div class="counter"><span id="counter"></span><span class="bar"><span id="progress"></span></span><span id="hint">المس الشاشة للظهور التدريجي</span></div><div><button class="nav next" id="next">التالي ←</button></div></footer></div>
 <audio id="brief-audio" src="assets/shield_media2.mp3" preload="none"></audio><audio id="hit-audio" src="assets/shield_audio1.wav" preload="none"></audio><audio id="miss-audio" src="assets/shield_audio2.wav" preload="none"></audio>
 <script>
@@ -144,17 +217,33 @@ const screen=[
 ()=>`<div class="slide dark"><div class="split"><div><span class="kicker">إمارة الدرعية</span><h1>إمارة الدرعية</h1></div><div class="cards two" style="height:min(65vh,390px)">${photo('image11.webp')}${photo('image12.webp')}</div></div></div>`,
 ()=>`<div class="slide soft learning-slide"><div class="learning-intro"><span class="kicker">جدول التعلم</span><h1>جدول التعلم</h1><p>طلابي الأعزاء من خلال الاطلاع السريع على الدرس</p><p>استخرج اهدافك المراد تحقيقها من دراستنا لهذا الموضوع</p></div><div class="learning-board faithful-learning"><div class="learning-six">${['ماذا أعرف؟','ماذا أريد أن أعرف؟','كيف سأتعلم؟','ماذا تعلمت؟','ما الذي سأقوم بتطبيقه؟','ماهي الأسئلة التي مازالت تحتاج إلى إجابة؟'].map((label,i)=>`<label class="learning-cell"><span>${label}</span><textarea class="classwork-input" data-note="learning-${i}" aria-label="${label}" spellcheck="false" placeholder=""></textarea></label>`).join('')}</div></div></div>`,
 ()=>`<div class="slide soft"><span class="kicker">اضاءة</span><div class="split" style="grid-template-columns:1fr 1.15fr"><div class="list"><div class="box"><h3>عزيزي المتخرج</h3><p>عندما أسس النبي محمد صلى الله عليه وسلم الدولة الإسلامية كان اول الاعمال التي قام بها هو تأسيس .......................</p>${rev(`<h3 class="text-gold">عاصمة الدولة الإسلامية</h3>`)}</div><p class="small">استمع عزيزي الطالب بمشاهدة الفيديو التالي ودون ملاحظاتك وافكارك ومفاهيمك الجديدة لنقوم بمناقشتها سويا ونتبادل المعلومات المفيدة</p></div><div><div class="video-box"><video controls playsinline preload="none" poster="assets/amira_image15.png" src="assets/video1.mp4"></video></div></div></div></div>`,
-()=>`<div class="slide soft"><span class="kicker">تفكير</span><div class="split"><div><h1>تفكير</h1><p>عزيزي الطالب ضمن المجموعة اجب عن السؤال التالي :</p>${rev(`<div class="question">لماذا انتقل مانع المريدي الى نجد عام 850هـ؟</div>`)}</div><div class="roundtable-board reveal"><div class="roundtable-title">استراتيجية الطاولة المستديرة</div><div class="roundtable-grid"><div class="roundtable-seats">${[1,2,3,4].map(i=>`<label class="seat-box"><span>اسم المتعلم</span><input aria-label="اسم المتعلم ${i}" autocomplete="off"></label>`).join('')}</div><div class="roundtable-art" aria-hidden="true"><div class="roundtable-disc"><div class="roundtable-disc-inner"></div></div><div class="roundtable-stand"></div></div></div><label class="roundtable-agreed">الإجابة المتفق عليها<input aria-label="الإجابة المتفق عليها" autocomplete="off"></label></div></div><details class="lesson-original-answer"><summary>النص التوضيحي الموجود في العرض</summary><p>من بني حنيفة الذين استوطنوه، ونتيجة للأحوال الطبيعية القاسية من جفاف وغيره، وتسلط الجبريين عليهم في منطقتهم، وامتداداً لجذورهم في الحكم في وسط شبه الجزيرة العربية، وتواصلهم مع أبناء عمومتهم في اليمامة؛ قرر مانع المريدي جد الأسرة المالكة آل سعود في منتصف القرن التاسع الهجري في عام 850هـ الانتقال بأسرته من شرق شبه الجزيرة العربية إلى العارض في نجد بدعوة من ابن عمه ابن درع صاحب حجر والجزعة.</p></details></div>`,
+()=>`<div class="slide soft roundtable-slide">
+  <div class="roundtable-header"><div><span class="kicker">تفكير</span><h1>تفكير</h1></div><p>عزيزي الطالب ضمن المجموعة اجب عن السؤال التالي :</p></div>
+  <div class="roundtable-task reveal"><h2>استراتيجية الطاولة المستديرة</h2><span class="roundtable-subtitle">التعلم التعاوني</span>
+    <p class="roundtable-instruction">باستخدام استراتيجية ( الطاولة المستديرة ) يكتب كل متعلم فكرة في الجدول ثم تبادل الأفكار وتدوين الإجابة المتفق عليها عن موضوع ...</p>
+    <div class="roundtable-question">لماذا انتقل مانع المريدي الى نجد عام 850هـ؟</div>
+  </div>
+  <div class="roundtable-workspace reveal">
+    <div class="roundtable-ideas">
+      ${[1,2,3,4].map(i=>`<div class="roundtable-learner"><label>اسم المتعلم <input class="classwork-input" data-note="roundtable-name-${i}" aria-label="اسم المتعلم ${i}" autocomplete="off"></label><label class="roundtable-idea"><span>فكرة المتعلم ${i}</span><textarea class="classwork-input" data-note="roundtable-idea-${i}" aria-label="فكرة المتعلم ${i}" rows="1" spellcheck="false"></textarea></label></div>`).join('')}
+    </div>
+    <div class="roundtable-center" aria-hidden="true"><div class="roundtable-disc"><div class="roundtable-disc-inner"></div></div><div class="roundtable-stand"></div></div>
+  </div>
+  <label class="roundtable-agreement reveal"><strong>الإجابة المتفق عليها</strong><textarea class="classwork-input" data-note="roundtable-agreed" aria-label="الإجابة المتفق عليها" rows="2" spellcheck="false"></textarea></label>
+  <details class="lesson-original-answer"><summary>النص التوضيحي الموجود في العرض</summary><p>من بني حنيفة الذين استوطنوه، ونتيجة للأحوال الطبيعية القاسية من جفاف وغيره، وتسلط الجبريين عليهم في منطقتهم، وامتداداً لجذورهم في الحكم في وسط شبه الجزيرة العربية، وتواصلهم مع أبناء عمومتهم في اليمامة؛ قرر مانع المريدي جد الأسرة المالكة آل سعود في منتصف القرن التاسع الهجري في عام 850هـ الانتقال بأسرته من شرق شبه الجزيرة العربية إلى العارض في نجد بدعوة من ابن عمه ابن درع صاحب حجر والجزعة.</p></details></div>`,
 ()=>`<div class="slide soft muraydi-slide muraydi-restored"><span class="kicker">مانع المريدي</span><h2>عزيزي الطالب تتبع من خلال الصور الاعمال التي قام بها مانع المريدي</h2><div class="cards muraydi-cards"><div class="box reveal" style="text-align:center">${img('image21.png','image-full')}<h3>مانع المريدي</h3></div><div class="box reveal" style="text-align:center">${img('image24.webp','image-full')}<h3>غصيبة</h3><h3>الميلبيد</h3></div><div class="box reveal" style="text-align:center"><h3>بلدة الدرعية</h3><div class="timeline"><div class="node">1</div><div class="node">2</div><div class="node">3</div></div><h3>امارة ذات نفوذ</h3></div></div></div>`,
-()=>`<div class="slide soft city-slide"><div class="city-heading"><div><span class="kicker">مدينة الدرعية</span><h1>مدينة الدرعية</h1></div><div class="city-year"><span>تأسست عام</span><strong>850</strong><span>هجرية</span><strong>1446م</strong></div></div><div class="city-grid">${rev(`<article class="city-item"><h3>تأسست</h3><p>على يد الأمير مانع بن ربيعة المريدي الجد الثاني عشر للملك عبدالعزيز.</p></article>`)}${rev(`<article class="city-item"><h3>تكونت</h3><p>في الأساس من غصيبة والمليبيد.</p></article>`)}${rev(`<article class="city-item"><h3>اتسعت</h3><p>في أحيائها على ضفتي وادي حنيفة.</p></article>`)}${rev(`<article class="city-item"><h3>اعتنت</h3><p>بطريق الحج لمرور الحجاج من خلالها قادمين من الشرق والشمال الشرقي.</p></article>`)}${rev(`<article class="city-item"><h3>تهيأت</h3><p>لتكون مركزاً للعلم والمعرفة والتنوع الثقافي.</p></article>`)}${rev(`<article class="city-item"><h3>تألفت</h3><p>من مركز حضري به نسبة كبيرة من السكان.</p></article>`)}${rev(`<article class="city-item"><h3>توافرت</h3><p>لها أسباب الحماية وممارسة التجارة وحماية الطرق التجارية وتأمين الاستقرار فيها.</p></article>`)}${rev(`<article class="city-item"><h3>تضمنت</h3><p>منطقة زراعية نظراً لوقوعها على وادي حنيفة الخصب، حيث تقوم بتصدير الفائض عن حاجاتها من الزراعة إلى المدن والمناطق المجاورة.</p></article>`)}</div></div>`,
+()=>`<div class="slide soft city-slide"><div class="city-heading"><div><span class="kicker">مدينة الدرعية</span><h1>مدينة الدرعية</h1></div><div class="city-year"><span>تأسست عام</span><strong>850</strong><span>هجرية</span><strong>1446م</strong></div></div><div class="city-grid">${rev(`<article class="city-item"><h3>تأسست</h3><p>على يد الأمير مانع بن ربيعة المريدي الجد الثاني عشر للملك عبدالعزيز.</p></article>`)}${rev(`<article class="city-item"><h3>تكونت</h3><p>في الأساس من غصيبة والمليبيد.</p></article>`)}${rev(`<article class="city-item"><h3>اتسعت</h3><p>في أحيائها على ضفتي وادي حنيفة.</p></article>`)}${rev(`<article class="city-item"><h3>اعتنت</h3><p>بطريق الحج لمرور الحجاج من خلالها قادمين من الشرق والشمال الشرقي.</p></article>`)}${rev(`<article class="city-item"><h3>تهيأت</h3><p>لتكون مركزاً للعلم والمعرفة والتنوع الثقافي.</p></article>`)}${rev(`<article class="city-item"><h3>تألفت</h3><p>من مركز حضري به نسبة كبيرة من السكان.</p></article>`)}${rev(`<article class="city-item"><h3>توافرت</h3><p>لها أسباب الحماية وممارسة التجارة وحماية الطرق التجارية وتأمين الاستقرار فيها.</p></article>`)}${rev(`<article class="city-item"><h3>تضمنت</h3><p>منطقة زراعية نظراً لوقوعها على وادي حنيفة الخصيب، حيث تقوم بتصدير الفائض عن حاجتها من الزراعة إلى المدن والمناطق المجاورة.</p></article>`)}</div></div>`,
 ()=>`<div class="slide soft"><div class="split"><div class="photo" style="height:min(65vh,450px)">${img('image26.png','contain')}</div><div class="video-box"><video controls playsinline preload="none" poster="assets/amira_image26.png" src="assets/video2.mp4"></video></div></div></div>`,
 ()=>`<div class="slide soft"><div class="split"><div><h1 style="font-size:clamp(22px,2.8vw,40px)">يوضح الفيديو التالي التسلسل التاريخ لحكام الدرعية بدا من مانع المريدي</h1></div><div class="video-box"><video controls playsinline preload="none" poster="assets/amira_image27.png" src="assets/video3.mp4"></video></div></div></div>`,
 ()=>`<div class="slide soft rulers-slide rulers-restored"><span class="kicker">أبرز أمراء إمارة الدرعية 850 - 1139 هـ</span><h2>أبرز أمراء إمارة الدرعية 850 - 1139 هـ</h2><div class="source-rulers-timeline" aria-label="تسلسل أسماء الأمراء في العرض الأصلي"><span class="source-line-date">850 هـ</span>${sourceLineage.map(name=>`<span class="source-line-chip">${name}</span>`).join('')}<span class="source-line-date">1139 هـ</span></div><div class="rulers-grid source-rulers-grid">${historicalRulers.map(([name,desc])=>`<div class="ruler-card"><span class="ruler-name">${name}</span>${rev(`<span class="ruler-desc">${desc}</span>`)}</div>`).join('')}</div></div>`,
-()=>`<div class="slide soft"><span class="kicker">التقويم الختامي</span><div class="split"><div><h1>التقويم الختامي</h1><h2>مهارة طرح الأسئلة</h2><p>اعزائي بالتعاون مع مجموعتك  كون أسئلة متعددة عما تناولناه اليوم في درسنا الممتع  ثم وجهها حسب الاتجاهات السنة</p></div><div class="directions"><div class="directions-title">الأسئلة تكون في ست اتجاهات</div><div class="directions-grid">${rev(`<div class="question-direction">مجموعة تسأل مجموعة</div>`)}${rev(`<div class="question-direction">مجموعة تسأل المعلم</div>`)}${rev(`<div class="question-direction">المعلم يسأل طالبا</div>`)}${rev(`<div class="question-direction">المعلم يسأل مجموعة</div>`)}${rev(`<div class="question-direction">الطالب يسأل طالبا</div>`)}${rev(`<div class="question-direction">الطالب يسأل المعلم</div>`)}</div></div></div></div>`,
 ()=>renderShield(),
-()=>`<div class="slide soft"><span class="kicker">المواطنة</span><div class="split" style="grid-template-columns:1.15fr .85fr"><div class="list"><h1>الرؤية2030</h1><p>الرؤية هي احد اهم الأسس التي ساعدت على تطور المملكة العربية السعودية منذ ان تم وضع أهدافها</p>${rev(`<p>ومن خلال الرؤية نستطيع تحقيق اقصى درجات المواطنة السعودية  وذلك عن طريق الاهتمام بتاريخ تأسيس الدولة السعودية بمختلف مراحلها ودراسة هذا التاريخ على جميع نواحيه الاجتماعية والاقتصادية والسياسية وتعزيز الولاء لوطننا الغالي من خلال الفخر بهذه الدولة العظيمة</p>`)}${rev(`<div class="question">طبقي هذه العبارة على درسنا لهذا اليوم وهو امارة الدرعية</div>`)}</div>${photo('image32.webp')}</div></div>`
+()=>`<div class="slide soft"><span class="kicker">التقويم الختامي</span><div class="split"><div><h1>التقويم الختامي</h1><h2>مهارة طرح الأسئلة</h2><p>اعزائي بالتعاون مع مجموعتك  كون أسئلة متعددة عما تناولناه اليوم في درسنا الممتع  ثم وجهها حسب الاتجاهات السنة</p></div><div class="directions"><div class="directions-title">الأسئلة تكون في ست اتجاهات</div><div class="directions-grid">${rev(`<div class="question-direction">مجموعة تسأل مجموعة</div>`)}${rev(`<div class="question-direction">مجموعة تسأل المعلم</div>`)}${rev(`<div class="question-direction">المعلم يسأل طالبا</div>`)}${rev(`<div class="question-direction">المعلم يسأل مجموعة</div>`)}${rev(`<div class="question-direction">الطالب يسأل طالبا</div>`)}${rev(`<div class="question-direction">الطالب يسأل المعلم</div>`)}</div></div></div></div>`,
+()=>`<div class="slide soft vision-slide"><span class="kicker">المواطنة</span><div class="vision-layout"><div class="vision-copy"><h1>الرؤية2030</h1><p class="vision-full-text">الرؤية هي احد اهم الأسس التي ساعدت على تطور المملكة العربية السعودية منذ ان تم وضع أهدافها 
+ومن خلال الرؤية نستطيع تحقيق اقصى درجات المواطنة السعودية  وذلك عن طريق الاهتمام بتاريخ تأسيس الدولة السعودية بمختلف مراحلها ودراسة هذا التاريخ على جميع نواحيه الاجتماعية والاقتصادية والسياسية وتعزيز الولاء لوطننا الغالي من خلال الفخر بهذه الدولة العظيمة  
+طبقي هذه العبارة على درسنا لهذا اليوم وهو امارة الدرعية 
+</p></div><div class="vision-image">${photo('image32.webp')}</div></div></div>`
 ];
-const names=['مقدمة العرض','ميثاق الحصة','مفاتيح المعرفة','إمارة الدرعية','جدول التعلم','اضاءة','تفكير','مانع المريدي','مدينة الدرعية','مشاهدة الفيديو','التسلسل التاريخي','المخطط الزمني','التقويم الختامي','درع الوطن','الرؤية2030'];
+const names=['مقدمة العرض','ميثاق الحصة','مفاتيح المعرفة','إمارة الدرعية','جدول التعلم','اضاءة','تفكير','مانع المريدي','مدينة الدرعية','مشاهدة الفيديو','التسلسل التاريخي','المخطط الزمني','درع الوطن','التقويم الختامي','الرؤية2030'];
 const qs=['ماذا لو لم يستوطن الاخيضريون منطقة حجر اليمامة ؟','كيف كان تأثير  سياسية الاخيضريون في المنطقة ؟','من المسؤول عن عودة الحياة الى منطقة حجر اليمامة ؟','عندما أسس النبي محمد صلى الله عليه وسلم الدولة الإسلامية كان اول الاعمال التي قام بها هو تأسيس .......................','لماذا انتقل مانع المريدي الى نجد عام 850هـ؟'];
 let current=0,revealCount=0,shieldMode='brief',shieldTarget=0,targetsDone=new Set(),soundEnabled=true,shieldOutcome='';const el=document.getElementById('stage'),count=document.getElementById('counter'),progress=document.getElementById('progress');
 function play(id){if(!soundEnabled)return;const a=document.getElementById(id);if(!a)return;a.pause();a.currentTime=0;a.play().catch(()=>{});}
@@ -162,9 +251,9 @@ function tick(f=650){if(!soundEnabled)return;try{const ctx=tick.ctx||(tick.ctx=n
 const classworkState=(()=>{try{return JSON.parse(localStorage.getItem('imarat-al-diriyah-classwork-v1')||'{}')}catch(e){return {}}})();
 function rememberClasswork(){document.querySelectorAll('[data-note]').forEach(input=>{if(input.dataset.note in classworkState){input.value=classworkState[input.dataset.note]}})}
 document.addEventListener('input',e=>{let node=e.target.closest('[data-note]');if(node){classworkState[node.dataset.note]=node.value;try{localStorage.setItem('imarat-al-diriyah-classwork-v1',JSON.stringify(classworkState))}catch(e){}}});
-function render(){document.querySelectorAll('video').forEach(v=>v.pause());el.innerHTML=screen[current]();rememberClasswork();el.setAttribute('data-slide',String(current));if(current===13){bindShield()}const reveals=el.querySelectorAll('.reveal');reveals.forEach((r,i)=>{if(i<revealCount)r.classList.add('show')});count.textContent=`${current+1} / ${screen.length} · ${names[current]}`;progress.style.width=`${(current+1)/screen.length*100}%`;document.getElementById('prev').disabled=current===0;document.getElementById('next').disabled=current===screen.length-1;document.getElementById('hint').textContent=reveals.length>revealCount?'المس الشاشة للظهور التدريجي':' ';}
+function render(){document.querySelectorAll('video').forEach(v=>v.pause());el.innerHTML=screen[current]();rememberClasswork();el.setAttribute('data-slide',String(current));if(current===12){bindShield()}const reveals=el.querySelectorAll('.reveal');reveals.forEach((r,i)=>{if(i<revealCount)r.classList.add('show')});count.textContent=`${current+1} / ${screen.length} · ${names[current]}`;progress.style.width=`${(current+1)/screen.length*100}%`;document.getElementById('prev').disabled=current===0;document.getElementById('next').disabled=current===screen.length-1;document.getElementById('hint').textContent=reveals.length>revealCount?'المس الشاشة للظهور التدريجي':' ';}
 function revealNext(){const v=el.querySelectorAll('.reveal');if(revealCount<v.length){v[revealCount++].classList.add('show');tick();document.getElementById('hint').textContent=revealCount===v.length?' ':'المس الشاشة للظهور التدريجي';return true}return false}
-function nav(dir){if(current===13 && shieldMode==='question' && dir>0)return;if(dir>0&&revealNext())return;current=Math.max(0,Math.min(screen.length-1,current+dir));revealCount=0;render()}
+function nav(dir){if(current===12 && shieldMode==='question' && dir>0)return;if(dir>0&&revealNext())return;current=Math.max(0,Math.min(screen.length-1,current+dir));revealCount=0;render()}
 el.addEventListener('click',e=>{if(e.target.closest('button,a,video,dialog,input,textarea,details,summary,[contenteditable]'))return;revealNext()});document.getElementById('next').addEventListener('click',()=>nav(1));document.getElementById('prev').addEventListener('click',()=>nav(-1));document.getElementById('sound').addEventListener('click',()=>{soundEnabled=!soundEnabled;document.getElementById('sound').classList.toggle('active',!soundEnabled);document.getElementById('sound').textContent=soundEnabled?'♫':'⊘';if(!soundEnabled)document.querySelectorAll('audio').forEach(a=>a.pause())});document.getElementById('full').addEventListener('click',()=>{if(document.fullscreenElement)document.exitFullscreen();else document.getElementById('app').requestFullscreen?.().catch(()=>{})});document.addEventListener('keydown',e=>{if(['ArrowLeft','PageDown'].includes(e.key))nav(1);if(['ArrowRight','PageUp'].includes(e.key))nav(-1);if(e.key===' '&&e.target===document.body){e.preventDefault();revealNext()}});
 function shieldAsset(name){return 'assets/'+name}
 function renderShield(){let t=`<div class="slide shield"><div class="shieldscene ${shieldMode}"><div class="sky"></div><img class="city" src="${shieldAsset('shield-city.webp')}" alt=""><div class="shieldhud"><span class="shieldbadge">درع الوطن · مهمة الاعتراض الذكي</span><span class="shieldbadge">${targetsDone.size} / 5</span></div>`;
